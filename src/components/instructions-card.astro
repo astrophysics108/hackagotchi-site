@@ -7,20 +7,33 @@
         margin: 2em;
         border-radius: 20px;
         background-color:rgb(122, 139, 236);
+        transition:0.5s ease;
+    }
+
+    .container:hover {
+        background-color: rgba(226, 170, 73);
+        transform: scale(1.1);
+        filter: drop-shadow(10px 5px 60px rgba(179, 56, 124, 0.5));
+
+        
     }
 
     .container :global(p) {
         color: #ffffff;
-        font-size: large;
+        font-size: 3em;
         font-family: "Tiny5", sans-serif;
     }
 
     .container :global(.step) {
         position: absolute;
-        top: -50px;
-        left: -50px;
-        height:6em;
-        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1.5));
+        top: -4em;
+        left: -5em;
+        height:10em;
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1));
+    }
+
+    .container :global(.step:hover) {
+        transform: rotate(-10deg);
     }
 </style>
 
